@@ -1,0 +1,66 @@
+name = business term
+Response
+{
+  "total": 1,
+  "offset": 0,
+  "limit": 0,
+  "results": [
+    {
+      "id": "00000000-0000-0000-0000-000000011001",
+      "createdBy": "00000000-0000-0000-0000-000000900001",
+      "createdOn": 1530567557084,
+      "lastModifiedBy": "00000000-0000-0000-0000-000000900001",
+      "lastModifiedOn": 1530567557084,
+      "system": true,
+      "resourceType": "AssetType",
+      "name": "Business Term",
+      "description": "A word or phrase that is used to describe something or to express a concept in a particular kind of language or branch of business.\n\nExamples: Customer, Person Purchase Count, Loan Amount.",
+      "parent": {
+        "id": "00000000-0000-0000-0000-000000031101",
+        "resourceType": "AssetType",
+        "name": "Business Asset"
+      },
+      "symbolData": {
+        "color": "#0072BC",
+        "symbolType": "ACRONYM_CODE",
+        "acronymCode": "BT"
+      },
+      "displayNameEnabled": false,
+      "ratingEnabled": false
+    }
+  ]
+}
+
+name = acronym
+Response
+{
+  "total": 1,
+  "offset": 0,
+  "limit": 0,
+  "results": [
+    {
+      "id": "00000000-0000-0000-0000-000000011003",
+      "createdBy": "00000000-0000-0000-0000-000000900001",
+      "createdOn": 1530567557084,
+      "lastModifiedBy": "00000000-0000-0000-0000-000000900001",
+      "lastModifiedOn": 1530567557084,
+      "system": true,
+      "resourceType": "AssetType",
+      "name": "Acronym",
+      "description": "An abbreviation that is used as a word. It is formed from the initial letters of a Business Term.\nExamples: ERP, EDW, EAD",
+      "parent": {
+        "id": "00000000-0000-0000-0000-000000011001",
+        "resourceType": "AssetType",
+        "name": "Business Term"
+      },
+      "symbolData": {
+        "color": "#0072BC",
+        "symbolType": "ACRONYM_CODE",
+        "acronymCode": "ACR"
+      },
+      "displayNameEnabled": false,
+      "ratingEnabled": false
+    }
+  ]
+}
+Response Code

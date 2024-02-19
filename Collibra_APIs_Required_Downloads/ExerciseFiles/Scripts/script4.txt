@@ -1,0 +1,91 @@
+import com.collibra.dgc.core.api.dto.instance.community.AddCommunityRequest
+import com.collibra.dgc.core.api.dto.instance.domain.AddDomainRequest
+import com.collibra.dgc.core.api.dto.instance.asset.AddAssetRequest
+import com.collibra.dgc.core.api.dto.instance.attribute.AddAttributeRequest
+
+//This script creates a community called ZZ_Accounting04
+
+def myCommunity = communityApi.addCommunity(AddCommunityRequest.builder()
+.name("ZZ_Accounting04")
+.description("My fourth community made through Java APIs")
+.build()
+)
+loggerApi.info("**** Here are the properties of my new community: ${myCommunity}****")
+
+
+//Create a glossary called ZZ_Accounting Terms in the community created above
+
+def myGlossary = domainApi.addDomain(AddDomainRequest.builder()
+.communityId(myCommunity.getId())
+.name("ZZ_Accounting Terms")
+.description("Glossary made through Java APIs")
+.typeId(string2Uuid("00000000-0000-0000-0000-000000010001"))
+.build()
+)
+loggerApi.info("**** Here are the properties of my new glossary: ${myGlossary}****")
+
+
+//Create a list containing the AddAssetBuilder.Request parameters to add Business Terms and Acronyms in the glossary created above
+
+def assetlist = []
+assetlist.add(AddAssetRequest.builder()
+	.name("Paid in Full")
+	.domainId(myGlossary.getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000011001"))
+.build())
+assetlist.add(AddAssetRequest.builder()
+	.name("Partial Payment")
+	.domainId(myGlossary.getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000011001"))
+.build())
+assetlist.add(AddAssetRequest.builder()
+	.name("Unpaid")
+	.domainId(myGlossary.getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000011001"))
+.build())
+
+assetlist.add(AddAssetRequest.builder()
+	.name("PIF")
+	.domainId(myGlossary.getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000011003"))
+.build())
+assetlist.add(AddAssetRequest.builder()
+	.name("PP")
+	.domainId(myGlossary.getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000011003"))
+.build())
+assetlist.add(AddAssetRequest.builder()
+	.name("UP")
+	.domainId(myGlossary.getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000011003"))
+.build())
+
+//Use the AddAsset API across the List to create the Business Terms and Acronyms
+
+def assets_new = assetApi.addAssets(assetlist)
+loggerApi.info("**** Here are the properties of my new assets: ${assets_new}****")
+
+//Create a list containing the AddAttributeBuilder.Request parameters to add definitions to the Business Terms created above
+
+def definitions = []
+definitions.add(AddAttributeRequest.builder()
+	.assetId(assets_new.get(0).getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000000202"))
+	.value("The account was fully paid and is not expecting any more funds. (100% paid)")
+.build())
+definitions.add(AddAttributeRequest.builder()
+	.assetId(assets_new.get(1).getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000000202"))
+	.value("Some, but not all of the payment was received. (Between 0% - 100% paid, exclusive)")
+.build())
+definitions.add(AddAttributeRequest.builder()
+	.assetId(assets_new.get(2).getId())
+	.typeId(string2Uuid("00000000-0000-0000-0000-000000000202"))
+	.value("Customer has not paid any funds. (0% paid)")
+.build())
+
+
+//Use the AddAttribute API across the List to create the Definitions for the Business Terms
+
+def definitions_new = attributeApi.addAttributes(definitions)
+loggerApi.info("**** Here are the properties of my new definitions: ${definitions_new}****")

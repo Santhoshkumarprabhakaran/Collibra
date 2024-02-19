@@ -1,0 +1,31 @@
+name = definition
+Response:
+{
+  "total": 2,
+  "offset": 0,
+  "limit": 0,
+  "results": [
+    {
+      "id": "00000000-0000-0000-0000-000000000202",
+      "createdBy": "00000000-0000-0000-0000-000000900001",
+      "createdOn": 1530567557084,
+      "lastModifiedBy": "00000000-0000-0000-0000-000000900001",
+      "lastModifiedOn": 1530567557084,
+      "system": true,
+      "resourceType": "StringAttributeType",
+      "name": "Definition",
+      "description": "The definition of the business asset. This is the shortest possible description that clearly defines the business asset."
+    },
+    {
+      "id": "00000000-0000-0000-0001-000500000063",
+      "createdBy": "00000000-0000-0000-0000-000000900001",
+      "createdOn": 1530567557084,
+      "lastModifiedBy": "00000000-0000-0000-0000-000000900001",
+      "lastModifiedOn": 1530567557084,
+      "system": true,
+      "resourceType": "StringAttributeType",
+      "name": "Empty values definition override",
+      "description": "Overrides the default list of values to consider as empty or missing values during data profiling. It must be a comma separated list of text values with each value enclosed in double quotes."
+    }
+  ]
+}

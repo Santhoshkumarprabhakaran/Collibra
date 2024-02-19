@@ -1,0 +1,10 @@
+import com.collibra.dgc.core.api.dto.instance.community.AddCommunityRequest
+
+//This script creates a community called ZZ_Accounting01
+
+def myCommunity = communityApi.addCommunity(AddCommunityRequest.builder()
+.name("ZZ_Accounting01")
+.description("My first community made through Java APIs")
+.build()
+)
+loggerApi.info("**** Here are the properties of my new community: ${myCommunity}****")

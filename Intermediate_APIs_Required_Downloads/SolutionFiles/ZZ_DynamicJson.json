@@ -1,0 +1,121 @@
+[
+    {
+        "resourceType": "Domain",
+        "identifier": {
+            "name": "ZZ_CRM",
+            "community": {
+                "name": "Intermediate APIs"
+            }
+        },
+        "type": {
+            "name": "Data Asset Domain"
+        }
+    },
+    {
+        "resourceType": "Domain",
+        "identifier": {
+            "name": "ZZ_Source to Target Mappings",
+            "community": {
+                "name": "Intermediate APIs"
+            }
+        },
+        "type": {
+            "name": "Mapping Domain"
+        }
+    },
+    {
+        "resourceType": "Asset",
+        "identifier": {
+            "name": "Client Name",
+            "domain": {
+                "name": "ZZ_CRM",
+                "community": {
+                    "name": "Intermediate APIs"
+                }
+            }
+        },
+        "type": {
+            "name": "Data Element"
+        }
+    },
+    {
+        "resourceType": "Asset",
+        "identifier": {
+            "name": "Client ID",
+            "domain": {
+                "name": "ZZ_CRM",
+                "community": {
+                    "name": "Intermediate APIs"
+                }
+            }
+        },
+        "type": {
+            "name": "Data Element"
+        }
+    },
+    {
+        "resourceType": "Asset",
+        "identifier": {
+            "name": "SQL Server Mapping",
+            "domain": {
+                "name": "ZZ_Source to Target Mappings",
+                "community": {
+                    "name": "Intermediate APIs"
+                }
+            }
+        },
+        "type": {
+            "name": "Mapping Specification"
+        }
+    },
+    {
+        "resourceType": "Complex Relation",
+        "identifier": {
+            "relations": {
+                "00000000-0000-0000-0000-000000007088:TARGET": [
+                    {
+                        "name": "Client Name",
+                        "domain": {
+                            "name": "ZZ_CRM",
+                            "community": {
+                                "name": "Intermediate APIs"
+                            }
+                        }
+                    }
+                ],
+                "00000000-0000-0000-0000-000000007089:TARGET": [
+                    {
+                        "name": "Client ID",
+                        "domain": {
+                            "name": "ZZ_CRM",
+                            "community": {
+                                "name": "Intermediate APIs"
+                            }
+                        }
+                    }
+                ],
+                "00000000-0000-0000-0000-000000007090:TARGET": [
+                    {
+                        "name": "SQL Server Mapping",
+                        "domain": {
+                            "name": "ZZ_Source to Target Mappings",
+                            "community": {
+                                "name": "Intermediate APIs"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "complexRelationType": {
+            "name": "Field Mapping"
+        },
+        "attributes": {
+            "Transformation Logic": [
+                {
+                    "value": "`clientsWithType` AS select `client`.`client_id` AS `id`, concat( concat( `client`.`name`,  ), `client`.`surname` ) AS `fullname`, `client_type`.`value` AS `client_type`, `client`.`email_address` AS `email_address` from ( `client` join `client_type` on (( `client`.`client_type` = `client_type`.`code` )));"
+                }
+            ]
+        }
+    }
+]

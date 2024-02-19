@@ -1,0 +1,20 @@
+First Comment
+{
+  "content": "The acronym for unpaid is confusing, since it is also the acronym for Unknown Party.",
+  "baseResource": {
+    "id": "5410c1cf-b356-45a1-9b6f-55a8432bc257",
+    "resourceType": "Asset"
+  }
+}
+
+Reply Comment
+{
+  "content": "Let’s discuss changing Unpaid to Not Paid, with the acronym NP at our next team meeting.",
+  "baseResource": {
+    "id": "5410c1cf-b356-45a1-9b6f-55a8432bc257",
+    "resourceType": "Asset"
+  },
+  "parentId": "60c92a38-2a41-46e0-af08-1dd783760e64",
+  "baseResourceId": "5410c1cf-b356-45a1-9b6f-55a8432bc257",
+  "baseResourceType": "Asset"
+}

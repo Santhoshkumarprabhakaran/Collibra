@@ -1,0 +1,4 @@
+{
+  "name": "ZZ_Accounting",
+  "description": "This is Zed's Community."
+}

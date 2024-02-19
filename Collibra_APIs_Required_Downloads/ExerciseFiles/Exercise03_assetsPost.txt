@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Paid in Full",
+    "displayName": "Paid in Full",
+    "domainId": "ae486832-ef2b-470b-8398-168517500d4c",
+    "typeId": "00000000-0000-0000-0000-000000011001"
+  },
+  {
+    "name": "Partial Payment",
+    "displayName": "Partial Payment",
+    "domainId": "ae486832-ef2b-470b-8398-168517500d4c",
+    "typeId": "00000000-0000-0000-0000-000000011001"
+  },
+  {
+    "name": "Unpaid",
+    "displayName": "Unpaid",
+    "domainId": "ae486832-ef2b-470b-8398-168517500d4c",
+    "typeId": "00000000-0000-0000-0000-000000011001"
+  },
+  {
+    "name": "PIF",
+    "displayName": "PIF",
+    "domainId": "ae486832-ef2b-470b-8398-168517500d4c",
+    "typeId": "00000000-0000-0000-0000-000000011003"
+  },
+  {
+    "name": "PP",
+    "displayName": "PP",
+    "domainId": "ae486832-ef2b-470b-8398-168517500d4c",
+    "typeId": "00000000-0000-0000-0000-000000011003"
+  },
+  {
+    "name": "UP",
+    "displayName": "UP",
+    "domainId": "ae486832-ef2b-470b-8398-168517500d4c",
+    "typeId": "00000000-0000-0000-0000-000000011003"
+  }
+]

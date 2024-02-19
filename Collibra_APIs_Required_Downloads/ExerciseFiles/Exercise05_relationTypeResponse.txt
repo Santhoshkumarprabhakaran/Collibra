@@ -1,0 +1,30 @@
+role: has acronym
+Response:
+{
+  "total": 1,
+  "offset": 0,
+  "limit": 0,
+  "results": [
+    {
+      "id": "00000000-0000-0000-0000-000000007030",
+      "createdBy": "00000000-0000-0000-0000-000000900001",
+      "createdOn": 1530567557084,
+      "lastModifiedBy": "00000000-0000-0000-0000-000000900001",
+      "lastModifiedOn": 1530567557084,
+      "system": true,
+      "resourceType": "RelationType",
+      "sourceType": {
+        "id": "00000000-0000-0000-0000-000000031101",
+        "resourceType": "AssetType",
+        "name": "Business Asset"
+      },
+      "targetType": {
+        "id": "00000000-0000-0000-0000-000000011003",
+        "resourceType": "AssetType",
+        "name": "Acronym"
+      },
+      "role": "has acronym",
+      "coRole": "is acronym for"
+    }
+  ]
+}

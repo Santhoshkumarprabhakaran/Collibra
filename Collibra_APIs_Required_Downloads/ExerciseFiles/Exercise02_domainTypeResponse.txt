@@ -1,0 +1,20 @@
+{
+  "total": 1,
+  "offset": 0,
+  "limit": 0,
+  "results": [
+    {
+      "id": "00000000-0000-0000-0000-000000010001",
+      "createdBy": "00000000-0000-0000-0000-000000900001",
+      "createdOn": 1530567557084,
+      "lastModifiedBy": "00000000-0000-0000-0000-000000900001",
+      "lastModifiedOn": 1530567557084,
+      "system": true,
+      "resourceType": "DomainType",
+      "name": "Glossary",
+      "description": "A prioritized list of Business Terms, Acronyms and their meanings",
+      "parent": {
+        "id": "00000000-0000-0000-0000-000000003007",
+        "resourceType": "DomainType",
+        "name": "Vocabulary"
+      }

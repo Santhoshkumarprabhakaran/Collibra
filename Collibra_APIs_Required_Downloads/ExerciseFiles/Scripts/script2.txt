@@ -1,0 +1,23 @@
+import com.collibra.dgc.core.api.dto.instance.community.AddCommunityRequest
+import com.collibra.dgc.core.api.dto.instance.domain.AddDomainRequest
+
+//This script creates a community called ZZ_Accounting02
+
+def myCommunity = communityApi.addCommunity(AddCommunityRequest.builder()
+.name("ZZ_Accounting02")
+.description("My second community made through Java APIs")
+.build()
+)
+loggerApi.info("**** Here are the properties of my new community: ${myCommunity}****")
+
+
+//Create a glossary called ZZ_Accounting Terms in the community created above
+
+def myGlossary = domainApi.addDomain(AddDomainRequest.builder()
+.communityId(myCommunity.getId())
+.name("ZZ_Accounting Terms")
+.description("Glossary made through Java APIs")
+.typeId(string2Uuid("00000000-0000-0000-0000-000000010001"))
+.build()
+)
+loggerApi.info("**** Here are the properties of my new glossary: ${myGlossary}****")

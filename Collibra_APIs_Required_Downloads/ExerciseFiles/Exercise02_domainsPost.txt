@@ -1,0 +1,6 @@
+{
+  "name": "ZZ_Accounting Terms",
+  "communityId": "e4a4539f-e8f9-4f9a-ab44-3d02fca6901e",
+  "typeId": "00000000-0000-0000-0000-000000010001",
+  "description": "Zed's accounting glossary"
+}

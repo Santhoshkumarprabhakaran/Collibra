@@ -1,0 +1,17 @@
+[
+  {
+    "assetId": "e3618a90-1cc3-4517-8ff6-73b8b7f65e0a",
+    "typeId": "00000000-0000-0000-0000-000000000202",
+    "value": "The account was fully paid and is not expecting any more funds. (100% paid)"
+  },
+    {
+    "assetId": "e250b373-6109-4655-877d-2f3b599316e3",
+    "typeId": "00000000-0000-0000-0000-000000000202",
+    "value": "Some, but not all of the payment was received. (Between 0% - 100% paid, exclusive)"
+  },
+    {
+    "assetId": "5410c1cf-b356-45a1-9b6f-55a8432bc257",
+    "typeId": "00000000-0000-0000-0000-000000000202",
+    "value": "Customer has not paid any funds. (0% paid)"
+  }
+]
