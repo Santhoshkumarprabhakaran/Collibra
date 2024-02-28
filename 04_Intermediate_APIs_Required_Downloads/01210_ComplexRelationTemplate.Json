@@ -31,7 +31,7 @@
             }]
         }
     },
-    "complexRelationType:" {
+    "complexRelationType": {
         "name": "Field Mapping"
     },
     "attributes": {

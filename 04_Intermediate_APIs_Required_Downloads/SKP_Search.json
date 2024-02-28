@@ -1,0 +1,23 @@
+{
+    "keywords": "\"Client Id\"",
+    "searchInFields":  [
+            {
+              "resourceType": "Asset",
+              "fields": [
+                "name"
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "field": "createdBy",
+              "values": [
+                "068292c3-4a7f-4dc6-b834-7d02c39f5920"
+              ]
+            }
+          ],
+          "sortField": "NAME",
+          "sortOrder": "ASC",
+          "limit": 20,
+          "offset": 0
+}

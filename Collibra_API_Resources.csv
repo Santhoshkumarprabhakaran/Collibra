@@ -16,21 +16,21 @@ Attribute Type,Definition,00000000-0000-0000-0000-000000000202,StringAttributeTy
 Definition,The account was fully paid and is not expecting any more funds. (100% paid),393662db-e329-41a6-a596-5e9c34a91f2f,StringAttributeType
 Definition,"Some, but not all of the payment was received.  (Between 0%-100% paid, exclusive)",2b74be09-52c1-4f9a-a3e2-6a322ddd88ca,StringAttributeType
 Definition,Customer has not paid any funds. (0% paid),ea0c1c2d-85c0-4a7c-8f3e-1bba7ad22b8e,StringAttributeType
-Relation Type,"     ""role"": ""has acronym"",
-      ""coRole"": ""is acronym for""",00000000-0000-0000-0000-000000007030,Source is Role and Target is coRole
+Relation Type,"     ""role"": ""has acronym"",",,
+"      """"coRole"""": """"is acronym for""""""",00000000-0000-0000-0000-000000007030,Source is Role and Target is coRole,
 Relation,Paid In Full => PIF,10879928-be0b-44d0-a52d-8621ed6fceb4,
 Relation,Unpaid => UP,0d979ce2-42d0-4c18-9cb0-1563f3963192,
 Relation,Partial Payment => PP,db3a094a-2c3f-4eab-972a-0ecd667500c4,
-Comment,"The acronym for Unpaid is confusing, since it is also the acronym for Unknown Party",92f53d35-28ee-453c-bf66-240e1a0826c5,"  ""baseResource"": {
-    ""id"": ""6afa6e8b-069a-48de-ba08-363093098c65"",
-    ""resourceType"": ""Asset""
-  }"
-Comment Reply,"Let's discuss changing Unpaid to Not Paid, with acronym NP at our next team meeting",77c93673-394c-42f6-ba13-dfe0125d27c,"  ""baseResource"": {
-    ""id"": ""6afa6e8b-069a-48de-ba08-363093098c65"",
-    ""resourceType"": ""Asset""
-  },
-  ""parent"": {
-    ""id"": ""92f53d35-28ee-453c-bf66-240e1a0826c5"",
-    ""resourceType"": ""Comment""
-  }
-}"
+Comment,"The acronym for Unpaid is confusing, since it is also the acronym for Unknown Party",92f53d35-28ee-453c-bf66-240e1a0826c5,"  ""baseResource"": {"
+"    """"id"""": """"6afa6e8b-069a-48de-ba08-363093098c65""""",,,
+"    """"resourceType"""": """"Asset""""",,,
+"  }""",,,
+Comment Reply,"Let's discuss changing Unpaid to Not Paid, with acronym NP at our next team meeting",77c93673-394c-42f6-ba13-dfe0125d27c,"  ""baseResource"": {"
+"    """"id"""": """"6afa6e8b-069a-48de-ba08-363093098c65""""",,,
+"    """"resourceType"""": """"Asset""""",,,
+  },,,
+"  """"parent"""": {",,,
+"    """"id"""": """"92f53d35-28ee-453c-bf66-240e1a0826c5""""",,,
+"    """"resourceType"""": """"Comment""""",,,
+  },,,
+"}""",,,

@@ -1,0 +1,25 @@
+[
+    {
+        "resourceType": "Asset",
+        "identifier": {
+            "name": "Client ID",
+            "domain": {
+                "name": "SKP_CRM",
+                "community": {
+                    "name": "Intermediate APIs"
+                }
+            }
+        },
+        "type": {
+            "name": "Data Element"
+        },
+        "attributes": {
+            "Description": [{
+                "value": "Identifies unique users of our website."
+            }],
+            "00000000-0000-0000-0000-000000003115": [{
+                "value": "16534"
+            }]
+        }
+    }  
+]
